@@ -1,1 +1,6 @@
-<p>exercice3 works!</p>
+<div style="margin: 3px;padding:5px;background-color: antiquewhite;">
+  <p *ngIf="statut">p1</p>
+  <p *ngIf="!statut">p2</p>
+  <button (click)="switchStatut()" >Switch Status</button>
+</div>
+

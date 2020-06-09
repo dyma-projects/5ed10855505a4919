@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice3Component implements OnInit {
 
-  constructor() { }
+  statut: boolean;
+
+  constructor() {
+    this.statut = true;
+
+  }
+
+  switchStatut() {
+    this.statut = !this.statut;
+  }
 
   ngOnInit(): void {
   }
